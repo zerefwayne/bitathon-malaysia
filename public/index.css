@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+.container--landing {
+  height: 100vh;
+  background-color: #adadad;
+}
+.container--event-details {
+  height: 100vh;
+  background-color: #dadada;
+}
+.container--timeline {
+  height: 100vh;
+  background-color: brown;
+}
+.container--faq {
+  height: 100vh;
+  background-color: yellow;
+}
+.container--prizes {
+  height: 100vh;
+  background-color: violet;
+}
+.container--team {
+  height: 100vh;
+  background-color: tomato;
+}
+.container--sponsors {
+  height: 100vh;
+  background-color: green;
+}
+.container--footer {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.component-nav {
+  padding: 1rem 3rem;
+}
+.component-nav--menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=index.css.map */

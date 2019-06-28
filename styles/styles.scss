@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.4rem;
+}
+
+.container{
+    &--landing{
+        height: 100vh;
+        background-color: #adadad;
+    }
+
+    &--event-details{
+        height: 100vh;
+        background-color: #dadada;
+    }
+
+    &--timeline{
+        height: 100vh;
+        background-color: brown;
+    }
+
+    &--faq{
+        height: 100vh;
+        background-color: yellow;
+    }
+    &--prizes{
+        height: 100vh;
+        background-color: violet;
+    }
+    &--team{
+        height: 100vh;
+        background-color: tomato;
+    }
+
+    &--sponsors{
+        height: 100vh;
+        background-color: green;
+    }
+
+    &--footer{
+        padding: 3rem 0;
+        text-align: center;
+    }
+}
+
+.component-nav{
+
+    padding: 1rem 3rem;
+
+    &--menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
