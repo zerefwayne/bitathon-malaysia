@@ -21,27 +21,27 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="component-nav--menu collapse navbar-collapse" id="navbarNavDropdown">
-                <div>
+                <div style="color: #3461c1; font-size: 1.8rem;">
                     Bitathon'19
                 </div>
                 <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                         <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
                     </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Timeline</a>
+                    <a class="nav-link" href="#timeline">Timeline</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="#faq">FAQ</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="#">Prizes</a>
+                        <a class="nav-link" href="#prizes">Prizes</a>
                     </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sponsors</a>
+                    <a class="nav-link" href="#sponsors">Sponsors</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#contact-us">Contact Us</a>
                 </li>
                 </ul>
             </div>
@@ -59,7 +59,7 @@
 
 
     </section>
-    <section class="container-div container--event-details">
+    <section id="about" class="container-div container--event-details">
 
 
         <div class="d-flex">
@@ -104,7 +104,7 @@
 
 
     </section>
-    <section class="container-div container--tracks">
+    <section id="tracks" class="container-div container--tracks">
             <h4 class="display-3 container--header text-center">Tracks</h4>
             <div class="track-container container mt-5">
 
@@ -150,7 +150,7 @@
 
             </div>
     </section>
-    <section class="container-div container--timeline">
+    <section id="timeline" class="container-div container--timeline">
             <h4 class="display-3 container--header text-center">Timeline</h4>
 
             <div class="timeline-container">
@@ -342,7 +342,7 @@
 
 
 
-    <section class="container-div container--prizes">
+    <section id="prizes" class="container-div container--prizes">
             <h4 class="display-3 container--header text-center">Prizes</h4>
 
             <div class="prize-container">
@@ -394,7 +394,7 @@
             </div>
 
     </section>
-    <section class="container-div container--faqs">
+    <section id="faq" class="container-div container--faqs">
             <h4 class="display-3 container--header text-center">FAQs</h4>
 
             <div class="d-flex">
@@ -448,13 +448,13 @@
     <!-- <section class="container-div container--team">
             <h4 class="display-3 container--header text-center">Team</h4>
     </section> -->
-    <section class="container-div container--sponsorship-brochure">
+    <section id="brochure" class="container-div container--sponsorship-brochure">
             <h3 class="text-white text-center display-4" style="font-size: 2rem;">Want to sponsor Bitathon 2019? Get in touch with us at abc@gmail.com</h3>
             <a href="./assets/Bitathon Sponsorship Brochure.pdf" target="_blank" style="text-decoration: none; color: white; display: flex; justify-content: center;" class="mt-5">
                 <div class="text-white text-center display-4" style="font-size: 2rem; border-bottom: 2px solid white; width: fit-content;">Download Brochure</div>
             </a>
     </section>
-    <section class="container-div container--sponsors">
+    <section id="sponsors" class="container-div container--sponsors">
             <h4 class="display-3 container--header text-center">Sponsors</h4>
 
             <div class="sponsor-container">
@@ -544,7 +544,7 @@
          </g>
        </svg>
     </section>
-    <footer class="container-div container--footer">
+    <footer id="contact-us" class="container-div container--footer">
             <div class="container">
 
                 <div class="d-flex align-items-center justify-content-center">
@@ -564,6 +564,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script>
         const closeAll = function(openDetails) {
         let list = document.querySelectorAll("details");
