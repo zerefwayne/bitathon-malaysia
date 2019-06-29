@@ -6,7 +6,7 @@
   <title>Bitathon Malaysia</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Nunito+Sans:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!--This project uses Sass preprocessor to convert styles/styles.css to ./index.css-->
@@ -15,14 +15,14 @@
 
 <body>
 
-    <nav class="component-nav navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="component-nav navbar sticky-top navbar-expand-lg navbar-light">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="component-nav--menu collapse navbar-collapse" id="navbarNavDropdown">
                 <div>
-                    Bitathon
+                    Bitathon'19
                 </div>
                 <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -49,7 +49,15 @@
 
 
     <section class="container-div container--landing">
-        <p style="font-family: 'DM Serif Display', sans-serif; font-size: 50px;">Bitathon</p>
+
+        <div class="landing-board d-flex flex-column">
+            <img src="assets/forum logo.png" class="brand-logo">
+            <h2  class="brand">BITATHON<span class="brand-year">'19</span></h2>
+            <h6 class="text-black hack-dates">20-22 September 2019, Kuala Lumpur, Malaysia</h6>
+        </div>
+
+
+
     </section>
     <section class="container-div container--event-details">
 
@@ -333,6 +341,180 @@
     </section>
 
 
+
+    <section class="container-div container--prizes">
+            <h4 class="display-3 container--header text-center">Prizes</h4>
+
+            <div class="prize-container">
+                <!-- <div class="container">
+
+                    <div class="row">
+
+                        <div class="col">
+
+                            <div class="card prize">
+
+                            <div class="card-body">
+                                30000
+                            </div>
+                            <div class="card-footer">
+                                1st Prize
+                            </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                                <div class="card prize">
+                                        <div class="card-body">
+                                                20000
+                                            </div>
+                                            <div class="card-footer">
+                                                2nd Prize
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="col">
+                                    <div class="card prize">
+
+                                            <div class="card-body">
+                                                    10000
+                                                </div>
+                                                <div class="card-footer">
+                                                    3rd Prize
+                                                </div>
+                                            </div>
+                                </div>
+
+                    </div>
+
+                </div> -->
+                <div class="container text-center tba">
+                    To be announced soon. 👨🏼‍💻
+                </div>
+            </div>
+
+    </section>
+    <section class="container-div container--faqs">
+            <h4 class="display-3 container--header text-center">FAQs</h4>
+
+            <div class="d-flex">
+
+                <div style="flex: 0 0 60%; align-items: center;">
+                        <div class="container faq-container">
+
+                                <details onclick='closeAll(this.parentNode);'>
+                                        <summary data-number="1">What is the eligibility criteria?</summary>
+                                        <div class="container">
+                                            <p>Any college student, pursuing undergraduate, post-graduate or PhD, can be a part of HaXplore.</p>
+                                        </div>
+                                      </details>
+                                      <details onclick='closeAll(this.parentNode);'>
+                                        <summary data-number="2">Is there any registration fee?</summary>
+                                        <p>No, it’s absolutely free of cost.</p>
+                                      </details>
+                                      <details onclick='closeAll(this.parentNode);'>
+                                        <summary data-number="3">What is the allowed team size?</summary>
+                                        <p>Form a team, comprising of minimum 2 and maximum 3 members.</p>
+                                      </details>
+                                      <details onclick='closeAll(this.parentNode);'>
+                                        <summary data-number="4">What will be the criteria for shortlisting?</summary>
+                                        <p>Individual participants will not be shortlisted. Only complete teams will be considered for shortlisting. Further details to be released soon!</p>
+                                      </details>
+                                      <details onclick='closeAll(this.parentNode);'>
+                                        <summary data-number="5">Will travel reimbursement be provided?</summary>
+                                        <p>Yes, the travel reimbursement will be provided to everyone.</p>
+                                      </details>
+                                      <details onclick='closeAll(this.parentNode);'>
+                                            <summary data-number="6">Will food and accomodation be provided to me?
+                                            </summary>
+                                            <p>Full 3 meals would be provided for 2 days, Saturday and Sunday. Snacks would be provided regularly during the entire course of the hackathon. Accommodation will be provided from Friday evening to Monday morning.</p>
+                                          </details>
+                                          <details onclick='closeAll(this.parentNode);'>
+                                                <summary data-number="7">Are there any special prizes for girls?</summary>
+                                                <p>Yes. In order to promote gender equality and diversity, we have a prize money of Rs.5000 for the best All-Girls team.</p>
+                                              </details>
+
+                    </div>
+                </div>
+                <div style="flex: 1" class="faq--illustration d-flex flex-column">
+                    <img src="assets/undraw_questions_75e0.svg">
+                    <h2 class="mt-5" style="color: #ffc107;">Have more questions?</h2>
+                    <h4 class="mt-2" style="color: #666666;">Feel free to reach out to us at abc@gmail.com</h4>
+                </div>
+            </div>
+
+
+    </section>
+    <!-- <section class="container-div container--team">
+            <h4 class="display-3 container--header text-center">Team</h4>
+    </section> -->
+    <section class="container-div container--sponsorship-brochure">
+            <h3 class="text-white text-center display-4" style="font-size: 2rem;">Want to sponsor Bitathon 2019? Get in touch with us at abc@gmail.com</h3>
+            <a href="./assets/Bitathon Sponsorship Brochure.pdf" target="_blank" style="text-decoration: none; color: white; display: flex; justify-content: center;" class="mt-5">
+                <div class="text-white text-center display-4" style="font-size: 2rem; border-bottom: 2px solid white; width: fit-content;">Download Brochure</div>
+            </a>
+    </section>
+    <section class="container-div container--sponsors">
+            <h4 class="display-3 container--header text-center">Sponsors</h4>
+
+            <div class="sponsor-container">
+
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-4 sponsor-logo">
+                            <img src="assets/forum logo.png">
+                        </div>
+                        <div class="col-4 sponsor-logo">
+                                <img src="assets/forum logo.png">
+                            </div>
+                            <div class="col-4 sponsor-logo">
+                                    <img src="assets/forum logo.png">
+                                </div>
+                                <div class="col-3 sponsor-logo">
+                                        <img src="assets/forum logo.png">
+                                    </div>
+                                    <div class="col-3 sponsor-logo">
+                                            <img src="assets/forum logo.png">
+                                        </div>
+                                        <div class="col-3 sponsor-logo">
+                                                <img src="assets/forum logo.png">
+                                            </div>
+                                            <div class="col-3 sponsor-logo">
+                                                    <img src="assets/forum logo.png">
+                                                </div>
+                                                <div class="col-3 sponsor-logo">
+                                                        <img src="assets/forum logo.png">
+                                                    </div>
+                                                    <div class="col-3 sponsor-logo">
+                                                            <img src="assets/forum logo.png">
+                                                        </div>
+                                                        <div class="col-3 sponsor-logo">
+                                                                <img src="assets/forum logo.png">
+                                                            </div>
+                                                            <div class="col-3 sponsor-logo">
+                                                                    <img src="assets/forum logo.png">
+                                                                </div>
+                                                                <div class="col-3 sponsor-logo">
+                                                                        <img src="assets/forum logo.png">
+                                                                    </div>
+                                                                    <div class="col-3 sponsor-logo">
+                                                                            <img src="assets/forum logo.png">
+                                                                        </div>
+                                                                        <div class="col-3 sponsor-logo">
+                                                                                <img src="assets/forum logo.png">
+                                                                            </div>
+                                                                            <div class="col-3 sponsor-logo">
+                                                                                    <img src="assets/forum logo.png">
+                                                                                </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+
     <section>
             <svg class="editorial"
             xmlns="http://www.w3.org/2000/svg"
@@ -349,31 +531,31 @@
            v44h-352z" />
          </defs>
          <g class="parallax1">
-          <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#4579e2"/>
          </g>
            <g class="parallax2">
-          <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#ffc107"/>
            </g>
              <g class="parallax3">
           <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
           </g>
            <g class="parallax4">
-          <use xlink:href="#gentle-wave" x="50" y="6" fill="#2c3e50"/>
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#222222"/>
          </g>
        </svg>
     </section>
-    <section class="container-div container--prizes">
-            <h4 class="display-3 container--header text-center text-white">Prizes</h4>
-    </section>
-    <section class="container-div container--team">
-            <h4 class="display-3 container--header text-center">Team</h4>
-    </section>
-    <section class="container-div container--sponsors">
-            <h4 class="display-3 container--header text-center">Sponsors</h4>
-    </section>
     <footer class="container-div container--footer">
-            <h4 class="display-3 container--header text-center text-white">Footer</h4>
+            <div class="container">
+
+                <div class="d-flex align-items-center justify-content-center">
+
+                    <img src="assets/forum logo.png" class="brand-logo">
+                </div>
+
+            </div>
     </footer>
+
+
 
 
 
@@ -382,7 +564,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../js/index.js"></script>
+    <script>
+        const closeAll = function(openDetails) {
+        let list = document.querySelectorAll("details");
+        for (var item of list)
+        if (item != openDetails)
+        item.removeAttribute("open");
+    };
+  </script>
 </body>
 
 </html>
