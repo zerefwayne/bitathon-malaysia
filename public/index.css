@@ -9,6 +9,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
+@media (max-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+}
 
 body {
   font-size: 1.4rem;
@@ -47,6 +52,11 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@media (max-width: 500px) {
+  .container--landing {
+    display: none;
+  }
 }
 .container--landing .brand {
   font-size: 6rem;
@@ -97,11 +107,21 @@ body {
   font-weight: 500;
   color: #222222;
 }
+@media (max-width: 500px) {
+  .container--event-details .about--content {
+    flex: 0 0 100%;
+  }
+}
 .container--event-details .about--illustration {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .container--event-details .about--illustration {
+    display: none;
+  }
 }
 .container--event-details .about--illustration img {
   width: 70%;
@@ -123,8 +143,23 @@ body {
   margin-top: 4rem;
   display: flex;
 }
+@media (max-width: 500px) {
+  .container--timeline .timeline-container {
+    flex-direction: column;
+  }
+}
 .container--timeline .timeline-online {
   flex: 0 0 50%;
+}
+@media (max-width: 500px) {
+  .container--timeline .timeline-online {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .container--timeline .timeline-online .img-container img {
+    display: none;
+  }
 }
 .container--timeline .timeline-onsite {
   flex: 1;
@@ -208,6 +243,14 @@ body {
   background-color: white;
   padding: 7rem 0;
 }
+.container--faqs .faq-wrapper {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container--faqs .faq-wrapper {
+    flex-direction: column;
+  }
+}
 .container--faqs .faq-container {
   padding: 5rem 0;
   width: 80%;
@@ -235,6 +278,10 @@ body {
   align-items: center;
   justify-content: center;
   margin: 3rem 0;
+}
+.container--sponsors .sponsor-logo .caption {
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2rem;
 }
 .container--footer {
   background-color: #222222;
