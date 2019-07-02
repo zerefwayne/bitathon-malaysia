@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Nunito+Sans:300,400,600,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--This project uses Sass preprocessor to convert styles/styles.css to ./index.css-->
@@ -53,7 +54,7 @@
 
     <section class="container-div container--landing">
 
-        <div class="landing-board d-flex flex-column">
+        <div class="landing-board d-flex flex-column" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="300">
             <img src="assets/forum logo.png" class="brand-logo">
             <h2 class="brand">BITATHON<span class="brand-year">'19</span></h2>
             <h6 class="text-black hack-dates">20-22 September 2019, Kuala Lumpur, Malaysia</h6>
@@ -102,6 +103,7 @@
                 <img src="./assets/about.svg">
             </div>
 
+            <img class="sep-about-tracks" src="assets/Group (5).svg">
 
         </div>
 
@@ -120,7 +122,7 @@
             <div class="row d-flex justify-content-center">
 
                 <div class="col-10 mb-4 col-lg-4">
-                    <div class="track card">
+                    <div class="track card" data-aos="flip-up" data-aos-duration="1000">
                         <div class="card-body">
                             <img class="rounded" src="assets/artificial_intelligence_2x.jpg" style="width: 90%;">
                         </div>
@@ -132,7 +134,7 @@
 
                 </div>
                 <div class="col-10 mb-4 col-lg-4">
-                    <div class="track card">
+                    <div class="track card" data-aos="flip-down" data-aos-duration="1400">
                         <div class="card-body">
                             <img class="rounded" src="assets/crypto-mining-illustration.png" style="width: 90%;">
                         </div>
@@ -143,7 +145,7 @@
                     </div>
                 </div>
                 <div class="col-10 mb-4 col-lg-4">
-                    <div class="track card">
+                    <div class="track card" data-aos="flip-up" data-aos-duration="1200">
                         <div class="card-body">
                             <img class="rounded" src="assets/dribbble_automation_dan_kindley_1.png" style="width: 90%;">
                         </div>
@@ -158,6 +160,8 @@
             </div>
 
         </div>
+
+        <img class="sep-tracks-timeline" src="assets/Group (6).svg">
     </section>
     <section id="timeline" class="container-div container--timeline">
         <h4 class="display-3 container--header text-center">Timeline</h4>
@@ -211,7 +215,7 @@
                 </div>
 
                 <div style="flex: 1;" class="img-container d-flex align-items-center justify-content-center">
-                    <img src="assets/undraw_events_2p66.svg" width="60%">
+                    <img src="assets/undraw_events_2p66.svg" width="60%" data-aos="fade-up" data-aos-duration="1200">
                 </div>
 
             </div>
@@ -221,7 +225,7 @@
                 <div class="container">
 
                     <h6 class="title-date">20th September 2019</h6>
-                    <ul class="list-group final">
+                    <ul class="list-group final" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
                         <li class="list-group-item schedule-item">
                             <div class="d-flex">
                                 <div class="time">09:00</div>
@@ -267,7 +271,7 @@
                     </ul>
 
                     <h6 class="title-date">21st September 2019</h6>
-                    <ul class="list-group final">
+                    <ul class="list-group final" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
                         <li class="list-group-item schedule-item">
                             <div class="d-flex">
                                 <div class="time">03:00</div>
@@ -314,7 +318,7 @@
 
 
                     <h6 class="title-date">22nd September 2019</h6>
-                    <ul class="list-group final">
+                    <ul class="list-group final" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
                         <li class="list-group-item schedule-item">
                             <div class="d-flex">
                                 <div class="time">12:00</div>
@@ -353,7 +357,7 @@
 
 
     <section id="prizes" class="container-div container--prizes">
-        <h4 class="display-3 container--header text-center">Prizes</h4>
+        <h4 class="display-3 container--header text-center text-white">Prizes</h4>
 
         <div class="prize-container">
             <!-- <div class="container">
@@ -470,10 +474,12 @@
 
                 </div>
             </div>
-            <div style="flex: 1" class="faq--illustration d-flex flex-column">
-                <img src="assets/undraw_questions_75e0.svg">
-                <h2 class="mt-5" style="color: #ffc107;">Have more questions?</h2>
-                <h4 class="mt-2" style="color: #666666;">Feel free to reach out to us at bitathon@gmail.com</h4>
+            <div style="flex: 1" class="faq--illustration">
+                <div class="d-flex flex-column" data-aos="fade-up" data-aos-duration="1200">
+                    <img src="assets/undraw_questions_75e0.svg">
+                    <h2 class="mt-5" style="color: #ffc107;">Have more questions?</h2>
+                    <h4 class="mt-2" style="color: #666666;">Feel free to reach out to us at bitathon@gmail.com</h4>
+                </div>
             </div>
         </div>
 
@@ -508,6 +514,8 @@
             </div>
 
         </div>
+
+        <img class="sep-sponsors-team" src="assets/Group (4).svg">
 
     </section>
     <section id="team" class="container-div container--team">
@@ -620,9 +628,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+
+        AOS.init();
+
         const closeAll = function (openDetails) {
             let list = document.querySelectorAll("details");
             for (var item of list)
