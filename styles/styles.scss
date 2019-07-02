@@ -348,7 +348,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
 
   &--tracks {
     // height: 100vh;
-    background-color: #fdfdfd;
+    // background-color: #fdfdfd;
+    background: url('./assets/Copy\ of\ shutterstock_503725969.png'), #222222c7;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+
     padding: 10rem 0;
     position: relative;
 
@@ -361,7 +366,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
 
     .track {
       border: none;
-      box-shadow: 0px 0px 10px #f7f7f7;
+      //box-shadow: 0px 0px 10px #f7f7f7;
       padding: 2rem .5rem;
       border-radius: 1rem;
 
@@ -385,6 +390,18 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
   &--prizes {
     // height: 100vh;
     background-color: #3867d6;
+    background: #6a3093;
+    background: url('./assets/bg-prizes.png'), #444444c7;
+    background-blend-mode: hard-light;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 7rem 0;
+    //display: flex;
+      /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
     @media (min-width: $break-small){
       clip-path: polygon(0 7%, 100% 0, 100% 93%, 0 100%);
@@ -475,8 +492,23 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
 
   &--sponsorship-brochure {
     // height: 100vh;
-    background-image: radial-gradient(circle farthest-corner at 23.1% 64.6%, rgba(129, 125, 254, 1) 0%, rgba(111, 167, 254, 1) 90%);
-    padding: 9rem 0;
+    //background-image: radial-gradient(circle farthest-corner at 23.1% 64.6%, rgba(129, 125, 254, 1) 0%, rgba(111, 167, 254, 1) 90%);
+//     background: #6a3093;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: url('./assets/Copy\ of\ Bg4.png');
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+
+    .sponsor-cta{
+
+      font-style: italic;
+      font-size: 3.5rem;
+    }
+
+    padding: 15rem 5rem;
     color: white;
   }
 

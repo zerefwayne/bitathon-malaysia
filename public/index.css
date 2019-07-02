@@ -255,7 +255,10 @@ body {
   border-radius: 5px;
 }
 .container--tracks {
-  background-color: #fdfdfd;
+  background: url("./assets/Copy of shutterstock_503725969.png"), #222222c7;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: darken;
   padding: 10rem 0;
   position: relative;
 }
@@ -265,7 +268,6 @@ body {
 }
 .container--tracks .track {
   border: none;
-  box-shadow: 0px 0px 10px #f7f7f7;
   padding: 2rem 0.5rem;
   border-radius: 1rem;
 }
@@ -278,6 +280,14 @@ body {
 }
 .container--prizes {
   background-color: #3867d6;
+  background: #6a3093;
+  background: url("./assets/bg-prizes.png"), #444444c7;
+  background-blend-mode: hard-light;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 7rem 0;
+  /* fallback for old browsers */
 }
 @media (min-width: 500px) {
   .container--prizes {
@@ -333,9 +343,16 @@ body {
   width: 50%;
 }
 .container--sponsorship-brochure {
-  background-image: radial-gradient(circle farthest-corner at 23.1% 64.6%, #817dfe 0%, #6fa7fe 90%);
-  padding: 9rem 0;
+  background: url("./assets/Copy of Bg4.png");
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  padding: 15rem 5rem;
   color: white;
+}
+.container--sponsorship-brochure .sponsor-cta {
+  font-style: italic;
+  font-size: 3.5rem;
 }
 .container--sponsors {
   background-color: #fdfdfd;
