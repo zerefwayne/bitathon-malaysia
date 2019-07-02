@@ -308,6 +308,9 @@ body {
 .container--faqs {
   background-color: white;
   padding: 7rem 0;
+  background: url("./assets/Copy of Bg2_landscape.png");
+  background-position: center;
+  background-size: cover;
 }
 .container--faqs .faq-wrapper {
   display: flex;
@@ -336,7 +339,10 @@ body {
 }
 .container--sponsors {
   background-color: #fdfdfd;
-  padding: 7rem 0;
+  background: url("./assets/Copy of Bg2_landscape.png");
+  background-position: center;
+  background-size: cover;
+  padding: 10rem 0;
   position: relative;
 }
 .container--sponsors .sponsor-logo img {
