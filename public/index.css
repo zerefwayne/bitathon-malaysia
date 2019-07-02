@@ -289,11 +289,6 @@ body {
   padding: 7rem 0;
   /* fallback for old browsers */
 }
-@media (min-width: 500px) {
-  .container--prizes {
-    clip-path: polygon(0 7%, 100% 0, 100% 93%, 0 100%);
-  }
-}
 .container--prizes .prize-container {
   padding: 7rem 0;
 }
