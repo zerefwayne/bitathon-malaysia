@@ -86,6 +86,41 @@ body {
     padding: 5rem 5rem 0 5rem;
   }
 
+  &--registration{
+    background: #3461c1;
+    padding-bottom: 5rem;
+
+
+    .reg--header{
+      color: white;
+      text-align: center;
+    }
+
+    .reg--subheader{
+      font-size: 2rem;
+    }
+
+    .reg--instructions{
+      font-size: 1.6rem;
+
+      .btn-warning{
+        color: white;
+        font-weight: 1.6rem;
+        font-weight: bold;
+      }
+
+      .link{
+        font-size: 1.4rem;
+      }
+
+    }
+
+    .card-body{
+      padding: 4rem;
+    }
+
+  }
+
   &--landing {
     height: 100vh;
 
@@ -847,6 +882,12 @@ details[open] summary~* {
   -webkit-animation: animationRotate 0.3s ease-out forwards;
   animation: animationRotate 0.3s ease-out forwards;
   color: black;
+}
+
+.register-button{
+
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 @-webkit-keyframes animationRotate {

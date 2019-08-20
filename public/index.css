@@ -79,6 +79,31 @@ body {
 .container-div {
   padding: 5rem 5rem 0 5rem;
 }
+.container--registration {
+  background: #3461c1;
+  padding-bottom: 5rem;
+}
+.container--registration .reg--header {
+  color: white;
+  text-align: center;
+}
+.container--registration .reg--subheader {
+  font-size: 2rem;
+}
+.container--registration .reg--instructions {
+  font-size: 1.6rem;
+}
+.container--registration .reg--instructions .btn-warning {
+  color: white;
+  font-weight: 1.6rem;
+  font-weight: bold;
+}
+.container--registration .reg--instructions .link {
+  font-size: 1.4rem;
+}
+.container--registration .card-body {
+  padding: 4rem;
+}
 .container--landing {
   height: 100vh;
   background-blend-mode: hard-light;
@@ -585,6 +610,11 @@ details[open] summary ~ * {
   -webkit-animation: animationRotate 0.3s ease-out forwards;
   animation: animationRotate 0.3s ease-out forwards;
   color: black;
+}
+
+.register-button {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 @-webkit-keyframes animationRotate {
