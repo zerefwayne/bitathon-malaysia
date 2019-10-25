@@ -74,10 +74,9 @@ body {
 
 
 .tba {
-  color: #cccccc;
-  font-size: 3rem;
   font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
+  margin-top: 4rem;
 }
 
 .container {
@@ -87,13 +86,52 @@ body {
   }
 
   &--registration{
-    background: #3461c1;
-    padding-bottom: 5rem;
+    background: #FDFDFD;
+    padding: 10rem 5rem;
+
+    display: flex;
+    flex-direction: row;
+
+    .register-content {
+
+      flex: 0 0 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .register-image {
+
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .register-instructions {
+
+      color: #222222;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 2.4rem;
+
+      a {
+
+        color: #3867d6;
+        text-decoration: none;
+        border-bottom: 2px solid #3461c1;
+
+      }
+
+
+    }
 
 
     .reg--header{
-      color: white;
-      text-align: center;
+      color: #3461c1;
+      font-family: 'DM Serif Display', serif;
+
     }
 
     .reg--subheader{
@@ -187,7 +225,7 @@ body {
 
     padding: 5rem;
 
-    background-color: #ffffff;
+    background-color: whitesmoke;
     position: relative;
     z-index: 2;
 
@@ -218,9 +256,15 @@ body {
 
     }
 
+    .about--line {
+
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+
     .about--content {
 
-      flex: 0 0 60%;
+      flex: 0 0 50%;
 
       font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: 1.8rem;
@@ -247,7 +291,7 @@ body {
       }
 
       img {
-        width: 70%;
+        width: 50%;
       }
 
     }
@@ -264,6 +308,7 @@ body {
   }
 
   &--team {
+    background-color: whitesmoke;
 
     padding-bottom: 5rem;
 
@@ -436,13 +481,16 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
 
   &--prizes {
     // height: 100vh;
-    background-color: #3867d6;
-    background: #6a3093;
-    background: url('./assets/bg-prizes.png'), #444444c7;
-    background-blend-mode: hard-light;
-    background-attachment: fixed;
-    background-position: center;
+    // background-color: #3867d6;
+    // background: linear-gradient(to right, #404040, 0%, black 100%);
+    background: url('./assets/Black-Wallpaper-092-2560x1600.jpg'), linear-gradient(to right, #434343 0%, black 100%);;
     background-size: cover;
+
+    // background: url('./assets/bg-prizes.png'), #444444c7;
+    // background-blend-mode: hard-light;
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-size: cover;
     padding: 7rem 0;
     //display: flex;
       /* fallback for old browsers */
