@@ -21,7 +21,7 @@ body {
 
 .btn-style {
   color: white;
-  background-color: #F2BD33;
+  background-color: #f2bd33;
   padding: 2px 5px;
   border-radius: 3px;
 }
@@ -80,7 +80,7 @@ body {
   padding: 5rem 5rem 0 5rem;
 }
 .container--registration {
-  background: #FDFDFD;
+  background: #fdfdfd;
   padding: 10rem 5rem;
   display: flex;
   flex-direction: row;
@@ -166,7 +166,10 @@ body {
 }
 .container--event-details {
   padding: 5rem;
-  background-color: whitesmoke;
+  background-color: #1430ff;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../assets/Copy of shutterstock_503725969.png");
+  background-attachment: fixed;
+  background-size: cover;
   position: relative;
   z-index: 2;
 }
@@ -187,10 +190,12 @@ body {
 .container--event-details .about--header {
   font-family: "DM Serif Display", sans-serif, -apple-system;
   margin-bottom: 7rem;
+  color: white;
 }
 .container--event-details .about--line {
   font-size: 2.4rem;
   margin-bottom: 2rem;
+  color: white;
 }
 .container--event-details .about--content {
   flex: 0 0 50%;
@@ -342,14 +347,55 @@ body {
   font-size: 2rem;
   color: #444444;
 }
+@media (max-width: 500px) {
+  .container .prize-2 {
+    order: 2;
+  }
+}
 .container--prizes {
   background: url("./assets/Black-Wallpaper-092-2560x1600.jpg"), linear-gradient(to right, #434343 0%, black 100%);
   background-size: cover;
   padding: 7rem 0;
   /* fallback for old browsers */
 }
+.container--prizes .prize-row {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .container--prizes .prize-row {
+    flex-direction: column;
+  }
+}
 .container--prizes .prize-container {
   padding: 7rem 0;
+}
+@media (min-width: 500px) {
+  .container--prizes .prize-1 .card {
+    transform: translateY(-10%);
+  }
+}
+@media (max-width: 500px) {
+  .container--prizes .prize-1 {
+    transform: translateY(0);
+    order: 1;
+  }
+}
+@media (max-width: 500px) {
+  .container--prizes .prize-3 {
+    order: 3;
+  }
+}
+.container--prizes .prize-card .card {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container--prizes .prize-card {
+    margin: 1rem 0;
+  }
 }
 .container--prizes .prize {
   border: none;
@@ -365,7 +411,7 @@ body {
   color: #3461c1;
 }
 .container--prizes .prize .card-footer {
-  background-color: #F2BD33;
+  background-color: #f2bd33;
   text-align: center;
   font-size: 2rem;
 }
@@ -409,8 +455,7 @@ body {
   font-size: 3.5rem;
 }
 .container--sponsors {
-  background-color: #fdfdfd;
-  background: url("./assets/Copy of Bg2_landscape.png");
+  background-color: #fafafa;
   background-position: top right;
   background-size: cover;
   padding: 10rem 0;
@@ -537,7 +582,7 @@ body {
 }
 .hr:after {
   transition: opacity 0.3s ease, animation 0.3s ease;
-  background: linear-gradient(to right, #62efab 5%, #F2EA7D 15%, #F2EA7D 25%, #FF8797 35%, #FF8797 45%, #e1a4f4 55%, #e1a4f4 65%, #82fff4 75%, #82fff4 85%, #62efab 95%);
+  background: linear-gradient(to right, #62efab 5%, #f2ea7d 15%, #f2ea7d 25%, #ff8797 35%, #ff8797 45%, #e1a4f4 55%, #e1a4f4 65%, #82fff4 75%, #82fff4 85%, #62efab 95%);
   background-size: 200%;
   background-position: 0%;
   animation: bar 15s linear infinite;
@@ -574,7 +619,7 @@ summary {
   transition: all 0.1s ease-out;
   -webkit-clip-path: polygon(25px 0%, 100% 0%, calc(100% - 25px) 100%, 0% 100%);
   clip-path: polygon(25px 0%, 100% 0%, calc(100% - 25px) 100%, 0% 100%);
-  background: #FEDD00;
+  background: #fedd00;
   padding: 1.3rem 15px 1.3rem 7rem;
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
